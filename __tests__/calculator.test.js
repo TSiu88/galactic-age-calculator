@@ -42,4 +42,16 @@ describe('Calculator', () => {
     expect(jupiterAge).toEqual(2);
   });
 
+  test('should give difference between age and life expectancy', () => {
+    calculator.lifeExpectancy = 82;
+    expect(calculator.expectedYears()).toEqual(52);
+  });
+
+  test('should return true (years left) or false (years past) depending on if the difference between age and life expectancy is positive or negative', () => {
+    calculator.age = 94;
+    calculator.lifeExpectancy = 82;
+    let yearsLeft = calculator.hasYearsLeft(calculator.expectedYears());
+    expect(yearsLeft).toEqual(false);
+  });
+
 });

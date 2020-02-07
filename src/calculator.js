@@ -33,5 +33,19 @@ export class Calculator{
     return Math.floor(this.age/jupiterAdjustment);
   }
 
+  // calculateAge(planet){
+  //   return Math.floor(`this.age/${planet}Adjustment`);
+  // }
 
+  expectedYears(){
+    return this.lifeExpectancy - this.age;
+  }
+
+  hasYearsLeft(years){
+    if (years > 0){
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
