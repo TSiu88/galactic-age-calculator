@@ -1,3 +1,8 @@
+const mercuryAdjustment = .24;
+const venusAdjustment = .62;
+const marsAdjustment = 1.88;
+const jupiterAdjustment = 11.86;
+
 export class Calculator{
   constructor(age){
     this.age = age;
@@ -13,7 +18,20 @@ export class Calculator{
   }
 
   mercuryCalculation(){
-    return Math.floor(this.age/.24);
+    return Math.floor(this.age/mercuryAdjustment);
   }
+
+  venusCalculation(){
+    return Math.floor(this.age/venusAdjustment);
+  }
+
+  marsCalculation(){
+    return Math.floor(this.age/marsAdjustment);
+  }
+
+  jupiterCalculation(){
+    return Math.floor(this.age/jupiterAdjustment);
+  }
+
 
 }
