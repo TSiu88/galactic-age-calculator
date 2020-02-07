@@ -6,8 +6,18 @@
 
 ## Description
 
-_README under construction_
-<!-- _Detailed desc w/ purpose/usage, what does, motivation to create, why exists, other info for users/developers to have_ -->
+_This site is the Week 5 Friday independent assignment for Epicodus' full time Intro to Programming and C#/React course.  It is a site for a user to see how old they would be if their age was calculated using the solar year on other planets._
+
+_In this program the user is able to input a positive integer number for their age and have the option to put in a positive integer number for the life expectancy amount.  The user's age in years on the different planets are then shown, using the information in the table below.  The program will also tell the user that depending on the life expectancy for them, how many years they have until they reach that age or, if they are above that age, how many years they have lived past the life expectancy age._
+
+| Planet   | Equivalent Year on Planet to Earth years |
+| :------: | :--------------------------------------: |
+| Mercury  | 1 Mercury year = 0.24 Earth years        |
+| Venus    | 1 Venus year = 0.62 Earth years          |
+| Mars     | 1 Mars year = 1.88 Earth years           |
+| Jupiter  | 1 Jupiter year = 11.86 Earth years       |
+
+_This program was created to focus on creating tests and TDD specs before writing code using the Red, Green, Refactor workflow.  As such the UI is currently very minimal.  It also practices using node and npm to test, debug, and run the program._
 
 ## Setup/Installation Requirements
 
@@ -40,7 +50,7 @@ _README under construction_
 * _Markdown_
 
 ## Notable Features
-<!-- _features that make project stand out_ -->
+_In this program I used ES6 template literals and createElements to dynamically create divs for HTML and insert the planets and the information for the ages into them._
 
 ## Specifications
 
@@ -79,20 +89,22 @@ _README under construction_
 
 <!-- _Here is a snippet of what the input looks like:_
 
-![Snippet of input fields](img/snippet1.png)
+![Snippet of input fields](/src/img/snippet1.png)
 
 _Here is a preview of what the output looks like:_
 
-![Snippet of output box](img/snippet2.png) -->
+![Snippet of output box](/src/img/snippet2.png) -->
 
 <!-- _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_ -->
 
 ## Test Case Example
-<!-- _Tests are done through Jest and are run from the command line prompt with `npm test`._
-_Some example tests:_
-![Snippet of an example test](img/test1.png)
+_Tests are done through Jest and are run from the command line prompt with `npm test`._
 
-![Snippet of an example result](img/test2.png) -->
+_Some example tests and results:_
+
+![Snippet of an example test](/src/img/tester1.png)
+
+![Snippet of an example result](/src/img/tester2.png)
 <!-- _describe and show how to run tests with `code` examples}_ -->
 
 ## Known Bugs

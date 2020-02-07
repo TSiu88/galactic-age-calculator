@@ -13,7 +13,7 @@ export class Calculator{
     venusAdjustment;
     marsAdjustment;
     jupiterAdjustment;
-    this.outputAges = [parseInt(this.age)];
+    this.outputAges = [];
   }
 
   checkValid(num){
@@ -26,6 +26,7 @@ export class Calculator{
   }
 
   calculateAgeOutput(){
+    this.outputAges[0] = parseInt(this.age);
     for (let i=1; i<this.planets.length; i++){
       this.outputAges.push(this.calculateAge(this.planets[i]));
     }
