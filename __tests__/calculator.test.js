@@ -4,11 +4,11 @@ describe('Calculator', () => {
   let calculator;
 
   beforeEach(() => {
-    calculator = new Calculator(30);
+    calculator = new Calculator();
   });
 
   test('should check if Calculator created correctly with inputted values or default', () => {
-    expect(calculator.age).toEqual(30);
+    expect(calculator.age).toEqual(1);
     expect(calculator.lifeExpectancy).toEqual(78);
   });
 
@@ -20,31 +20,30 @@ describe('Calculator', () => {
 
   test('should return correct age in Mercury years', () => {
     calculator.age = 25;
-    let mercuryAge = calculator.mercuryCalculation();
-    expect(mercuryAge).toEqual(104);
-    // let planet = "mercury";
-    // expect(calculator.calculateAge(planet)).toEqual(104);
+    let planet = "mercury";
+    expect(calculator.calculateAge(planet)).toEqual(104);
   });
 
   test('should return correct age in Venus years', () => {
     calculator.age = 25;
-    let venusAge = calculator.venusCalculation();
-    expect(venusAge).toEqual(40);
+    let planet = "venus";
+    expect(calculator.calculateAge(planet)).toEqual(40);
   });
 
   test('should return correct age in Mars years', () => {
     calculator.age = 25;
-    let marsAge = calculator.marsCalculation();
-    expect(marsAge).toEqual(13);
+    let planet = "mars";
+    expect(calculator.calculateAge(planet)).toEqual(13);
   });
 
   test('should return correct age in Jupiter years', () => {
     calculator.age = 25;
-    let jupiterAge = calculator.jupiterCalculation();
-    expect(jupiterAge).toEqual(2);
+    let planet = "jupiter";
+    expect(calculator.calculateAge(planet)).toEqual(2);
   });
 
   test('should give difference between age and life expectancy', () => {
+    calculator.age = 30;
     calculator.lifeExpectancy = 82;
     expect(calculator.expectedYears()).toEqual(52);
   });

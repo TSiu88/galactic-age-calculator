@@ -4,12 +4,18 @@ const marsAdjustment = 1.88;
 const jupiterAdjustment = 11.86;
 
 export class Calculator{
-  constructor(age){
-    this.age = age;
+  constructor(){
+    this.age = 1;
     this.lifeExpectancy = 78;
+    this.planets = ["earth", "mercury", "venus", "mars", "jupiter"];
+    mercuryAdjustment;
+    venusAdjustment;
+    marsAdjustment;
+    jupiterAdjustment;
   }
 
   checkValid(num){
+    num = parseFloat(num);
     if (Number.isInteger(num) && num > 0){
       return true;
     } else{
@@ -17,24 +23,9 @@ export class Calculator{
     }
   }
 
-  mercuryCalculation(){
-    return Math.floor(this.age/mercuryAdjustment);
-  }
-
-  venusCalculation(){
-    return Math.floor(this.age/venusAdjustment);
-  }
-
-  marsCalculation(){
-    return Math.floor(this.age/marsAdjustment);
-  }
-
-  jupiterCalculation(){
-    return Math.floor(this.age/jupiterAdjustment);
-  }
-
   calculateAge(planet){
-    return `Math.floor(this.age/${planet}Adjustment)`;
+    let adjustment = eval(`${planet}Adjustment`);
+    return Math.floor(this.age/adjustment);
   }
 
   expectedYears(){
