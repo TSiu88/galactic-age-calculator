@@ -50,7 +50,30 @@ _README under construction_
 
 ## Specifications
 
-
+* _The program shows an alert that user input of age is required and to please enter a valid number into input._
+  * _Example Input: "hi"_
+  * _Example Output: alert of "Age required.  Please enter a valid number for age."_
+* _The program shows an alert that user input of life expectancy needs to be a valid positive number and to please enter a valid number into input._
+  * _Example Input: "hi"_
+  * _Example Output: alert of "Please enter a valid number for life expectancy."_
+* _The program returns age converted to Mercury years when button for "Mercury" pressed._
+  * _Example Input: Age=25, "Mercury" clicked_
+  * _Example Output: "104 Mercury years"_
+* _The program returns age converted to Venus years when button for "Venus" pressed._
+  * _Example Input: Age=25, "Venus" clicked_
+  * _Example Output: "40 Venus years"_
+* _The program returns age converted to Mars years when button for "Mars" pressed._
+  * _Example Input: Age=25, "Mars" clicked_
+  * _Example Output: "13 Mars years"_
+* _The program returns age converted to Jupiter years when button for "Jupiter" pressed._
+  * _Example Input: Age=25, "Jupiter" clicked_
+  * _Example Output: "2 Jupiter years"_
+* _The program subtracts the given age from the given life expectancy and returns the difference in years._
+  * _Example Input: age=25, life expectancy=78_
+  * _Example Output: "53 years left until reach life expectancy"_
+* _The program switches to say "years past life expectancy" and return positive number if calculated life expectancy and age difference is negative_
+  * _Example Input: age=84, life expectancy=78_
+  * _Example Output: "6 years past life expectancy_
 
 ## Screenshots
 
