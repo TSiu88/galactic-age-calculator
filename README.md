@@ -1,7 +1,6 @@
-# _Assignment Name_
+# _Galactic Age Calculator_
 
-#### _Brief desc of Project, 02.6.2020_
-<!-- ##### _Version 1.1 Updated 01.11.2020_ -->
+#### _Week 5 Independent Friday Assignment for Epicodus, 02.7.2020_
 
 #### By _**Tiffany Siu**_
 
@@ -14,23 +13,19 @@ _README under construction_
 
 ### Requirements to Run
 * _Web Browser_
-* _Webpack_
 * _Node.js_
 * _NPM_
+* _Webpack_
 
 ### Instructions
 
-<!-- **This page may be viewed by:**
+*This page may be viewed by:*
 
 1. Download and install Node.js from the [official website](https://nodejs.org/en/download/)
 2. Clone the [repository](https://github.com/TSiu88/beep-boop.git) from my [GitHub page](https://github.com/TSiu88)
-3. Use a command line/Bash to move to the project directory with `cd into-project-directory`
-4. Run `npm install` to get all dependencies. 
-5. Run `npm run start` to start up the program -->
-
-<!-- _This page may be viewed by cloning the [repository](https://github.com/TSiu88/beep-boop.git) from my [GitHub page](https://github.com/TSiu88) and opening the **index.html** file in any web browser._ -->
-
-<!-- _Other things need to run like servers, databases, code, how to install and use program_ -->
+3. Use a command line/Bash to move to the project directory with `cd project-directory-here`
+4. Run `npm install` in command line/Bash to get all dependencies. 
+5. Run `npm run start` in command line/Bash to start up the program in your browser.
 
 ## Other Technologies Used
 
@@ -41,7 +36,6 @@ _README under construction_
 * _Bootstrap 4.4.1_
 * _ESLint_
 * _Babel_
-* _Webpack_
 * _Jest_
 * _Markdown_
 
@@ -59,17 +53,17 @@ _README under construction_
 * _The program shows an alert that user input of life expectancy needs to be a valid positive number and to please enter a valid number into input._
   * _Example Input: "hi"_
   * _Example Output: alert of "Please enter a valid number for life expectancy."_
-* _The program returns age converted to Mercury years when button for "Mercury" pressed._
-  * _Example Input: Age=25, "Mercury" clicked_
+* _The program returns age converted to Mercury years from input._
+  * _Example Input: Age=25_
   * _Example Output: "104 Mercury years"_
-* _The program returns age converted to Venus years when button for "Venus" pressed._
-  * _Example Input: Age=25, "Venus" clicked_
+* _The program returns age converted to Venus years from input._
+  * _Example Input: Age=25_
   * _Example Output: "40 Venus years"_
-* _The program returns age converted to Mars years when button for "Mars" pressed._
-  * _Example Input: Age=25, "Mars" clicked_
+* _The program returns age converted to Mars years from input._
+  * _Example Input: Age=25_
   * _Example Output: "13 Mars years"_
-* _The program returns age converted to Jupiter years when button for "Jupiter" pressed._
-  * _Example Input: Age=25, "Jupiter" clicked_
+* _The program returns age converted to Jupiter years from input._
+  * _Example Input: Age=25_
   * _Example Output: "2 Jupiter years"_
 * _The program subtracts the given age from the given life expectancy and returns the difference in years._
   * _Example Input: age=25, life expectancy=78_

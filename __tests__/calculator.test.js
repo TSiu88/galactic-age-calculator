@@ -22,6 +22,8 @@ describe('Calculator', () => {
     calculator.age = 25;
     let mercuryAge = calculator.mercuryCalculation();
     expect(mercuryAge).toEqual(104);
+    // let planet = "mercury";
+    // expect(calculator.calculateAge(planet)).toEqual(104);
   });
 
   test('should return correct age in Venus years', () => {
