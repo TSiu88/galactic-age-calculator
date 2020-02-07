@@ -65,6 +65,9 @@ _README under construction_
 * _The program returns age converted to Jupiter years from input._
   * _Example Input: Age=25_
   * _Example Output: "2 Jupiter years"_
+* _The program returns an array of ages from the inputted age for all planets including earth._
+  * _Example Input: Age=25_
+  * _Example Output: [25, 104, 40, 13, 2]_
 * _The program subtracts the given age from the given life expectancy and returns the difference in years._
   * _Example Input: age=25, life expectancy=78_
   * _Example Output: "53 years left until reach life expectancy"_

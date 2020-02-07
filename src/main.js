@@ -12,24 +12,26 @@ $(document).ready(function(){
 
     let years = document.getElementById("age").value;
     let hasExpectancy = document.querySelector("#expectedYears").value;
-    if(hasExpectancy != ""){
-      if(calculator.checkValid(hasExpectancy) === true){
-        calculator.expectedYears = hasExpectancy;
-        console.log(calculator.expectedYears);
-      } else{
-        alert("Please enter a vaild positive whole number for life expectancy.");
-      }
-      
-    }
 
     if(calculator.checkValid(years)){
       calculator.age = years;
+      //calculator.planets.earth = years;
+      console.log(calculator.planets);
 
     } else{
       alert("Please enter a vaild positive whole number for age.");
     }
-    console.log(calculator.calculateAge("mercury"));
-  });
+    
+    if(hasExpectancy != ""){
+      if(calculator.checkValid(hasExpectancy) === true){
+        calculator.expectedYears = hasExpectancy;
+      } else{
+        alert("Please enter a vaild positive whole number for life expectancy.");
+      }
+    }
+    console.log(calculator.calculateAgeOutput());
+
+  }); //End of CalculateButton
 
 });
 

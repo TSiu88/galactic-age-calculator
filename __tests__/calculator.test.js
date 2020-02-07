@@ -42,6 +42,11 @@ describe('Calculator', () => {
     expect(calculator.calculateAge(planet)).toEqual(2);
   });
 
+  test('should return an array of all ages for all planets including earth', () => {
+    calculator.age = 25;
+    expect(calculator.calculateAgeOutput()).toEqual([25,104,40,13,2]);
+  });
+
   test('should give difference between age and life expectancy', () => {
     calculator.age = 30;
     calculator.lifeExpectancy = 82;
