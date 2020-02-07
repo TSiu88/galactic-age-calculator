@@ -9,17 +9,15 @@ function displayUpdate(calc){
   for(let i=0; i<calc.outputAges.length; i++){
     let planetName = calc.planets[i];
     $("#planetAges").append(createPlanetOutput(planetName));
-    $(eval(`"#${planetName}"`)).append(`<p>Age on planet: ${calc.outputAges[i]}</p>`);
+    $(eval(`"#${planetName}"`)).append(`<p>Planet: ${planetName}</p>`);
+    $(eval(`"#${planetName}"`)).append(`<p>Age on planet: ${calc.outputAges[i]} years</p>`);
   }
- 
-  displayLifeExpectancy(calc);
 }
 
 function createPlanetOutput(name){
   let newDiv = document.createElement('div');
   newDiv.id = name;
   newDiv.className = "planet";
-  newDiv.append(`<p>Planet: ${name}</p>`);
   return newDiv;
 }
 
@@ -51,15 +49,13 @@ $(document).ready(function(){
       calculator.age = years;
       calculator.outputAges = [];
       calculator.outputAges[0] = years;
-      console.log(calculator.planets);
-
     } else{
       alert("Please enter a vaild positive whole number for age.");
     }
     
     if(hasExpectancy != ""){
       if(calculator.checkValid(hasExpectancy) === true){
-        calculator.expectedYears = hasExpectancy;
+        calculator.lifeExpectancy = hasExpectancy;
       } else{
         alert("Please enter a vaild positive whole number for life expectancy.");
       }
@@ -68,6 +64,7 @@ $(document).ready(function(){
     calculator.calculateAgeOutput();
     
     displayUpdate(calculator);
+    displayLifeExpectancy(calculator);
 
   }); //End of CalculateButton
 
