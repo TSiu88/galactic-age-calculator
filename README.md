@@ -50,6 +50,9 @@ _README under construction_
 
 ## Specifications
 
+* _The program should create a Calulator object and save the inputted age (required) and life expectancy (with default 78 if not given)._
+  * _Example Input: age=30, life expectancy=80_
+  * _Example Output: Calculator created with age=30 and life expectancy=80_
 * _The program shows an alert that user input of age is required and to please enter a valid number into input._
   * _Example Input: "hi"_
   * _Example Output: alert of "Age required.  Please enter a valid number for age."_

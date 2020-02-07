@@ -1,6 +1,7 @@
 export class Calculator{
-  constructor(){
-    this.age = 1;
+  constructor(age){
+    this.age = age;
+    this.lifeExpectancy = 78;
   }
 
   checkValid(num){
@@ -9,6 +10,10 @@ export class Calculator{
     } else{
       return false;
     }
+  }
+
+  mercuryCalculation(){
+    return Math.floor(this.age/.24);
   }
 
 }
