@@ -1,7 +1,7 @@
 body{
   background-image: url(./img/stars1.png), url(./img/starfield.jpg);
   background-repeat: repeat, repeat;
-  background-size: 100%, 50%;
+  background-size: 150%, 50%;
   opacity: 0.5, 1;
   animation: none, stars 60s ease infinite;
 }
@@ -56,6 +56,13 @@ h5{
   background-position: center;
 }
 
+.planetImage{
+  width: 175x;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #inputFields{
   color: white;
   background: rgba(0, 0, 0, 0.5);
@@ -82,35 +89,20 @@ h5{
 
 #earthImage {
   background-image: url(../src/img/earth.gif);
-  width: 100px;
-  height: 100px;
-  background-position: center;
 }
 
 #mercuryImage {
   background-image: url(../src/img/mercury.gif);
-  width: 100px;
-  height: 100px;
-  background-position: center;
 }
 
 #venusImage {
   background-image: url(../src/img/venus.gif);
-  width: 100px;
-  height: 100px;
-  background-position: center;
 }
 
 #marsImage {
   background-image: url(../src/img/mars.gif);
-  width: 100px;
-  height: 100px;
-  background-position: center;
 }
 
 #jupiterImage {
   background-image: url(../src/img/jupiter.gif);
-  width: 100px;
-  height: 100px;
-  background-position: center;
 }
