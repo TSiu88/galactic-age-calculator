@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> 
     <title>Galactic Age Calculator</title>
   </head>
   <body>
     <div class="container">
-      <h1>Galactic Age Calculator</h1>
-      <h3>Convert your age on Earth to your age on other planets!  Just input your age here!</h3>
+      <div class="jumbotron">
+        <h1>Galactic Age Calculator</h1>
+        <h4>Convert your age on Earth to your age on other planets!  Just input your age here!</h4>
+      </div>
+      
 
       <div id="inputFields">
         <label for="years">Enter your age in years: (required)</label>
@@ -14,8 +18,9 @@
         <label for="lifeExpectancy">Enter your expected Life Expectancy in years: (optional)</label>
         <input type="number" name="lifeExpectancy" min="1" id="expectedYears" defaultValue="78"><br>
 
-        <button id="calculateButton">Calculate!</button>
+        <button class="btn" id="calculateButton">Calculate!</button>
       </div>
+      <hr>
       
       <div id="outputField">
         <h2>Your Converted Age:</h2>

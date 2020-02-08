@@ -8,7 +8,6 @@ export class Calculator{
     this.age = 1;
     this.lifeExpectancy = 78;
     this.planets = ["earth", "mercury", "venus", "mars", "jupiter"];
-    // this.planets = {earth: 0, mercury: 0, venus: 0, mars: 0, jupiter: 0};
     mercuryAdjustment;
     venusAdjustment;
     marsAdjustment;

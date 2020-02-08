@@ -1,0 +1,66 @@
+body{
+  background-image: url(./img/starfield.jpg);
+  background-repeat: repeat;
+  background-size: 50%;
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+h2{
+  text-align: center;
+}
+
+h5{
+  color: #8abdae;
+}
+
+.jumbotron{
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 0 0 8px 8px	#0D1727 inset;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.btn{
+  border: 2px solid #7952b3;
+  color: white;
+}
+
+.btn:hover{
+  background-color: #7952b3;
+  color: #f0f0f0;
+}
+
+.planet{
+  border: 2px solid #3458eb;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+}
+
+#inputFields{
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px 15px;
+}
+
+#outputField{
+  display: none;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 15px 15px;
+}
+
+#planetAges{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#expectedLife, #lifeYears{
+  font-weight: bold;
+}

@@ -9,7 +9,7 @@ function displayUpdate(calc){
   for(let i=0; i<calc.outputAges.length; i++){
     let planetName = calc.planets[i];
     $("#planetAges").append(createPlanetOutput(planetName));
-    $(eval(`"#${planetName}"`)).append(`<p>Planet: ${planetName}</p>`);
+    $(eval(`"#${planetName}"`)).append(`<h5 class="planetName">Planet: ${planetName}</h5>`);
     $(eval(`"#${planetName}"`)).append(`<p>Age on planet: ${calc.outputAges[i]} years</p>`);
   }
 }
@@ -41,6 +41,7 @@ $(document).ready(function(){
 
   $("#calculateButton").click(function(event){
     event.preventDefault();
+    $("#outputField").show();
 
     let years = document.getElementById("age").value;
     let hasExpectancy = document.querySelector("#expectedYears").value;
