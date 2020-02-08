@@ -87,15 +87,13 @@ _In this program I used ES6 template literals and createElements to dynamically 
 
 ## Screenshots
 
-<!-- _Here is a snippet of what the input looks like:_
+_Here is a snippet of what the input looks like:_
 
 ![Snippet of input fields](/src/img/snippet1.png)
 
 _Here is a preview of what the output looks like:_
 
-![Snippet of output box](/src/img/snippet2.png) -->
-
-<!-- _{Show pictures using ![alt text](image.jpg), show what library does as concisely as possible but don't need to explain how project solves problem from `code`_ -->
+![Snippet of output box](/src/img/snippet2.png)
 
 ## Test Case Example
 _Tests are done through Jest and are run from the command line prompt with `npm test`._
@@ -105,7 +103,6 @@ _Some example tests and results:_
 ![Snippet of an example test](/src/img/tester1.png)
 
 ![Snippet of an example result](/src/img/tester2.png)
-<!-- _describe and show how to run tests with `code` examples}_ -->
 
 ## Known Bugs
 
