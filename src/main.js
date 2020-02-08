@@ -34,7 +34,7 @@ function displayLifeExpectancy(calc){
 
   if (hasLeft){
     $("#haveOrAre").text("have");
-    $("#leftOrPast").text("left till");
+    $("#leftOrPast").text("left till you reach");
   } else{
     $("#haveOrAre").text("are");
     $("#leftOrPast").text(" years past");
