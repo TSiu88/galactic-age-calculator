@@ -39,6 +39,7 @@ h5{
   text-align: center;
   padding: 10px;
   margin: 5px;
+  background-position: center;
 }
 
 #inputFields{
@@ -63,4 +64,39 @@ h5{
 
 #expectedLife, #lifeYears{
   font-weight: bold;
+}
+
+#earthImage {
+  background-image: url(../src/img/earth.gif);
+  width: 100px;
+  height: 100px;
+  background-position: center;
+}
+
+#mercuryImage {
+  background-image: url(../src/img/mercury.gif);
+  width: 100px;
+  height: 100px;
+  background-position: center;
+}
+
+#venusImage {
+  background-image: url(../src/img/venus.gif);
+  width: 100px;
+  height: 100px;
+  background-position: center;
+}
+
+#marsImage {
+  background-image: url(../src/img/mars.gif);
+  width: 100px;
+  height: 100px;
+  background-position: center;
+}
+
+#jupiterImage {
+  background-image: url(../src/img/jupiter.gif);
+  width: 100px;
+  height: 100px;
+  background-position: center;
 }

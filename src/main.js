@@ -18,6 +18,11 @@ function createPlanetOutput(name){
   let newDiv = document.createElement('div');
   newDiv.id = name;
   newDiv.className = "planet";
+
+  let innerDiv = document.createElement('div');
+  innerDiv.id = name + "Image";
+  innerDiv.className = "planetImage";
+  newDiv.appendChild(innerDiv);
   return newDiv;
 }
 
