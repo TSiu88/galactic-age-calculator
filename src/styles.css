@@ -33,13 +33,15 @@ h5{
 
 .jumbotron{
   font-family: 'Raleway', sans-serif;
-  box-shadow: 0 0 8px 8px	#0D1727 inset;
+  box-shadow: 0 0 8px 8px	#0a121f inset;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #20214f;
+  color: white;
 }
 
 .btn{
-  border: 2px solid #7952b3;
+  border: 3px solid #7952b3;
   color: white;
 }
 
